@@ -150,15 +150,15 @@
 # print (Auto2.opis())
 ########################################################################################################################
 # kolory = {
-#     1 :	"biały",
-#     2 :	"brązowy",
-#     3 :	"czarny",
-#     4 :	"czerwony",
-#     5 :	"fioletowy",
-#     6 :	"niebieski",
-#     7 :	"pomarańczowy",
-#     8 :	"różowy",
-#     9 :	"szary",
+#     1 : "biały",
+#     2 : "brązowy",
+#     3 : "czarny",
+#     4 : "czerwony",
+#     5 : "fioletowy",
+#     6 : "niebieski",
+#     7 : "pomarańczowy",
+#     8 : "różowy",
+#     9 : "szary",
 #     10 : "zielony",
 #     11 : "żółty"
 # }
@@ -182,7 +182,29 @@
 # print (module.lista_skladana(lista))
 ########################################################################################################################
 # import module
-# module.zmienna_liczba_argumentow("chcę", "złączyć", "kilka", "słów")
+# print (module.zmienna_liczba_argumentow("chcę", "złączyć", "kilka", "słów"))
 ########################################################################################################################
-import module
-module.wypisz_ilosc_zmiennych(1, 2, 3, 4, 5)
+# import module
+# print(module.wypisz_ilosc_argumentow(1, 2, 3, 4))
+########################################################################################################################
+# import module
+# adresy = ["john@example.com", "python-list@python.org", '"wha.t.`1an?ug{}ly@email.com"']
+# module.czy_poprawny_email(adresy)
+########################################################################################################################
+# import module
+# print (module.zwroc_imiona_nazwiska("imie"))
+########################################################################################################################
+# A = set(["Adrian", "Adolf", "Adam", "Robert"])
+# B = set(["Bartłomiej", "Bartosz", "Bernard", "Robert"])
+# C = set(["Cezar", "Cieszymir", "Czcibor", "Robert"])
+#
+# print (A.union(B.union(C)))
+# print (A.intersection(B.intersection(C)))
+# print (B.union(C.difference(A), A.difference(B.union(C))))
+########################################################################################################################
+# ll = ["pierwsze", "drugie", "trzecie"]
+# pp = "piąte"
+#
+# x = pp.join(ll)
+# print(x)
+########################################################################################################################
