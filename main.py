@@ -208,3 +208,23 @@
 # x = pp.join(ll)
 # print(x)
 ########################################################################################################################
+# a = []
+# counter = 0
+# while counter < 26:
+#     a.insert(counter, chr(counter + 97))
+#     counter += 1
+# print (a)
+########################################################################################################################
+# import lists
+# listCopy = lists.not_sorted.copy()
+# listCopy.sort()
+# print("This isn't just reference, but copy: ")
+# print(lists.not_sorted)
+# print(listCopy)
+# listCopy = lists.not_sorted
+# listCopy.sort()
+# print("This is just reference: ")
+# print(lists.not_sorted)
+########################################################################################################################
+import module
+print(module.usun_element_z_tablicy("second"))

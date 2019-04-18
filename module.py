@@ -75,3 +75,14 @@ def zwroc_imiona_nazwiska(parameter):
     else:
         return("Jako parametr musisz podać: imie, nazwisko")
 
+def usun_element_z_tablicy(toDelete):
+    import lists
+    listCopy = lists.not_sorted.copy()
+    iteration = 0
+    for element in listCopy:
+        if listCopy[iteration] == toDelete:
+            listCopy.remove(element)
+            break
+        else:
+            iteration += 1
+    return(listCopy)
