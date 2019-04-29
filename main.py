@@ -226,5 +226,46 @@
 # print("This is just reference: ")
 # print(lists.not_sorted)
 ########################################################################################################################
-import module
-print(module.usun_element_z_tablicy("second"))
+# import module
+# print(module.usun_element_z_tablicy("second"))
+########################################################################################################################
+# import sys
+# print("Python version")
+# print (sys.version)
+# print("Version info.")
+# print (sys.version_info)
+########################################################################################################################
+# import datetime
+# now = datetime.datetime.now()
+# print (now)
+########################################################################################################################
+# def first_case():
+#     print ("first")
+#
+# def second_case():
+#     print ("second")
+#
+# def third_case():
+#     print ("third")
+#
+# mycase = {
+# 'first': first_case, #do not use ()
+# 'second': second_case, #do not use ()
+# 'third': third_case #do not use ()
+# }
+# myfunc = mycase['first']
+# myfunc()
+########################################################################################################################
+import calc
+print("this is calculator, select operation: ")
+print("1 - add, 2 - substract, 3 - multiply, 4 - divide")
+choice = input()
+
+print("Enter 2 values")
+num1 = input()
+num2 = input()
+
+print()
+
+result = calc.calc_func(choice, num1, num2)
+print(result)
