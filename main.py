@@ -258,14 +258,36 @@
 ########################################################################################################################
 import calc
 print("this is calculator, select operation: ")
-print("1 - add, 2 - substract, 3 - multiply, 4 - divide")
-choice = input()
+print("1 - add, 2 - substract, 3 - multiply, 4 - divide, 5 - percents, 6 - factorial, 7 - exponentiation")
+print("8 - square root")
+choice = int(input())
 
-print("Enter 2 values")
-num1 = input()
-num2 = input()
+if choice in (5, 6):
+    print("Enter 1 value")
+    num1 = float(input())
+elif choice == 8:
+    print("Enter value to root")
+    num1 = int(input())
+    print("Enter the degree of an nth root")
+    try:
+        num2 = int(input())
+    except ValueError:
+        print("degree must be integer value")
+else:
+    print("Enter 2 values")
+    num1 = float(input())
+    num2 = float(input())
 
 print()
 
-result = calc.calc_func(choice, num1, num2)
-print(result)
+if choice in (5, 6):
+    result = calc.calc_func(choice, num1)
+    if result is not None:
+        print(result)
+else:
+    try:
+        result = calc.calc_func(choice, num1, num2)
+        if result is not None:
+            print(result)
+    except NameError:
+        pass
